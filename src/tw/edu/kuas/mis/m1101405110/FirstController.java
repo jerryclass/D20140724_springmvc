@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class FirstController {
-    @RequestMapping("/User/{school}/{userName}")
+    
+	
+	@RequestMapping("/User/{school}/{userName}")
     public String helloWorld(Model model,
     		@PathVariable("userName") String name,
     		@PathVariable("school") String school) 
@@ -19,4 +21,13 @@ public class FirstController {
 
         return "helloWorld";
     }
+	
+	@RequestMapping("/sayHello")
+	public String sayHello(Model model)
+	{
+		return "helloWorld";
+	}
+	
+	
+	
 }

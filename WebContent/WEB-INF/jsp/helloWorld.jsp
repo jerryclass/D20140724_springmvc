@@ -11,6 +11,6 @@
 	
 	<br />
 	
-	您 來自 ${school}
+	您 來自1 ${school}
 </body>
 </html>
