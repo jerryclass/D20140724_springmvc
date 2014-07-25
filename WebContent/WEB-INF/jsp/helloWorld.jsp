@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${userName}
+	歡迎 ${userName} 登入
 	
 	<br />
-	Test
-	${school}
+	
+	您 來自 ${school}
 </body>
 </html>
