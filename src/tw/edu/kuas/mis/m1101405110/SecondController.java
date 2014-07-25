@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class SecondController {
 	
-	
 	@RequestMapping("/say")
 	public String sayHello(Model model)
 	{

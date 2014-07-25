@@ -4,25 +4,27 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
+@RequestMapping("/first/{uid}")
 public class FirstController {
     
-	
-	@RequestMapping("/User/{school}/{userName}")
+	@RequestMapping(value="/User/{school}/{userName}",method=RequestMethod.POST)
     public String helloWorld(Model model,
     		@PathVariable("userName") String name,
-    		@PathVariable("school") String school) 
+    		@PathVariable("school") String school,
+    		@PathVariable("uid") String uid) 
     
     {
         model.addAttribute("userName", name);
-        model.addAttribute("school",school);
+        model.addAttribute("school",uid);
 
         return "helloWorld";
     }
 	
-	@RequestMapping("/sayHello")
+	@RequestMapping(value="/sayHello" , method = RequestMethod.POST )
 	public String sayHello(Model model)
 	{
 		return "helloWorld";
