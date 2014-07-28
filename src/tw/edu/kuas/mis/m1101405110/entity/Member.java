@@ -5,7 +5,6 @@ public class Member {
 	private String account;
 	private String password;
 	private String userName;
-	private String userNickName;
 	
 	public String getAccount() {
 		return account;
@@ -25,11 +24,6 @@ public class Member {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getUserNickName() {
-		return userNickName;
-	}
-	public void setUserNickName(String userNickName) {
-		this.userNickName = userNickName;
-	}
+	
 	
 }
