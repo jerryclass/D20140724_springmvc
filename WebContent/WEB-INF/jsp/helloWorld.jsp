@@ -11,6 +11,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<form:form modelAttribute="kuas">
+	
+		<form:input path="userName" />
+		<form:input path="account" />
+		<form:input path="password" />
+		
+		
+	</form:form>
 </body>
 </html>
