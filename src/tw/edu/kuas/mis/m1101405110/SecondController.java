@@ -10,6 +10,13 @@ public class SecondController {
 	@RequestMapping("/say")
 	public String sayHello(Model model)
 	{
+		
+		Test test = new Test("Fuck GGC");
+		
+		model.addAttribute("command", test);
+		
 		return "helloWorld";
 	}
+	
+
 }
